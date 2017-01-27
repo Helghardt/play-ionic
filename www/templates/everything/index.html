@@ -1,0 +1,26 @@
+<ion-view view-title="{{'EVERYTHING' | translate}}" xmlns="http://www.w3.org/1999/html">
+    <div ng-controller="EverythingCtrl" >
+        <form name="rateForm" method="post" novalidate>
+            <ion-content class="container-body">
+                <div class="item item-input item-stacked-label">
+                    <span class="input-label" translate="TITLE"></span>
+                    <input name="title" type="search" ng-model="data.title" required
+                           ng-keyup="getValue()"
+                           placeholder="{{'TITLE_PLACEHOLDER' | translate}}">
+                    </input>
+                    <div ng-messages="rateForm.title.$error" role="alert" ng-show='rateForm.$submitted || rateForm.title.$dirty'>
+                        <div ng-message="required" class="form-error" translate="TITLE_REQUIRED_MESSAGE"></div>
+                    </div>
+                </div>
+            </ion-content>
+
+            <!-- Footer bar hack to get layout right -->
+            <ion-footer-bar class="high-footer bar-dark">
+            </ion-footer-bar>
+
+            <button keyboard-attach class="high-footer bar bar-footer" ng-click="submit(rateForm)">
+                <h1 class="title" translate="RATE"></h1>
+            </button>
+        </form>
+    </div>
+</ion-view>

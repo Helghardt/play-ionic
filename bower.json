@@ -1,0 +1,21 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ngCordova": "",
+    "ngImgCrop": "",
+    "ionic": "driftyco/ionic-bower#1.2.4",
+    "angular-messages": "^1.5.6",
+    "jquery": "^2.2.4"
+  },
+  "dependencies": {
+    "ng-file-upload": "^12.2.13",
+    "angular": "^1.6.0",
+    "angular-translate": "^2.13.1",
+    "angular-translate-loader-static-files": "^2.13.1",
+    "angular-translate-handler-log": "^2.13.1"
+  },
+  "resolutions": {
+    "angular": "^1.6.0"
+  }
+}
