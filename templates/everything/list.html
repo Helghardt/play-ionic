@@ -1,0 +1,34 @@
+<ion-content class="custom-header-margin">
+    <ion-refresher on-refresh="refreshData()" spinner="none" on-pulling="none" pulling-icon="none"></ion-refresher>
+
+    <div class="custom-body">
+        <div ng-if="items.length == 0">
+            <div class="container-card">
+                <div class="card">
+                    <div class="item item-body">
+                        <h2 translate="WELCOME_TEXT"></h2>
+                        <p translate="EMPTY_LIST_TEXT"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="items.length >= 0">
+            <div class="list-default">
+                <div class="block">
+                    <div ng-repeat="item in items">
+                        <div class="item no-padding">
+                            <div class="row default-top">
+                                <div class="col col-50 align-left">
+                                    <h2>{{ item.title }}, {{ item.rating }}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+</ion-content>
+

@@ -5,16 +5,16 @@ angular.module('generic-client.services.everything', [])
         'use strict';
         var self = this;
 
-        self.get = function () {
-            return $http.get(API + '/create/');
+        self.list = function () {
+            return $http.get(API + '/list/');
         };
 
-        self.create = function (title) {
+        self.create = function (title, rating) {
             return $http.post(API + '/create/', {
-                recipe: 'rating',
+                recipe: 'rate_everything',
                 title: title,
                 text: '',
-                rating: 5
+                rating: parseInt(rating)
             });
         };
     });
