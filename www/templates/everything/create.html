@@ -1,5 +1,5 @@
 <ion-view view-title="{{'EVERYTHING' | translate}}" xmlns="http://www.w3.org/1999/html">
-    <div ng-controller="EverythingCtrl" >
+    <div ng-controller="EverythingCtrl">
         <form name="rateForm" method="post" novalidate>
             <ion-content class="container-body">
                 <div class="item item-input item-stacked-label">
@@ -8,8 +8,20 @@
                            ng-keyup="getValue()"
                            placeholder="{{'TITLE_PLACEHOLDER' | translate}}">
                     </input>
-                    <div ng-messages="rateForm.title.$error" role="alert" ng-show='rateForm.$submitted || rateForm.title.$dirty'>
+                    <div ng-messages="rateForm.title.$error" role="alert"
+                         ng-show='rateForm.$submitted || rateForm.title.$dirty'>
                         <div ng-message="required" class="form-error" translate="TITLE_REQUIRED_MESSAGE"></div>
+                    </div>
+                </div>
+                <div class="item item-input item-stacked-label">
+                    <span class="input-label" translate="RATING"></span>
+                    <input name="rating" type="number" ng-model="data.rating" required
+                           ng-keyup="getValue()"
+                           placeholder="{{'RATING_PLACEHOLDER' | translate}}">
+                    </input>
+                    <div ng-messages="rateForm.rating.$error" role="alert"
+                         ng-show='rateForm.$submitted || rateForm.rating.$dirty'>
+                        <div ng-message="required" class="form-error" translate="RATING_REQUIRED_MESSAGE"></div>
                     </div>
                 </div>
             </ion-content>
@@ -19,7 +31,7 @@
             </ion-footer-bar>
 
             <button keyboard-attach class="high-footer bar bar-footer" ng-click="submit(rateForm)">
-                <h1 class="title" translate="RATE"></h1>
+                <h1 class="title" translate="RATING"></h1>
             </button>
         </form>
     </div>

@@ -77,8 +77,13 @@
   "LOADER_CHANGING_PREFERENCES": "Changing preferences...",
 
   "EVERYTHING": "Everything",
-  "RATE": "Rate it",
+  "RATING": "Rate it",
+  "RATING_PLACEHOLDER": "e.g. 5",
+  "RATING_REQUIRED_MESSAGE": "Give it a rating bru",
   "TITLE": "Title",
   "TITLE_PLACEHOLDER": "e.g. Lunchbar",
-  "TITLE_REQUIRED_MESSAGE": "You need to rate something"
+  "TITLE_REQUIRED_MESSAGE": "You need to rate something",
+
+  "WELCOME_TEXT": "Welcome",
+  "EMPTY_LIST_TEXT": "You have no ratings"
 }

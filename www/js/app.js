@@ -14,7 +14,8 @@ angular.module('generic-client', ['ionic',
     'generic-client.services.accounts',
     'generic-client.services.everything'])
 
-    .constant('API', 'http://130.211.68.207/api/1')
+    //.constant('API', 'http://130.211.68.207/api/1')
+    .constant('API', 'http://localhost:2468/api/1')
     .constant('REFRESH_INTERVAL', 3000)
 
     .config(function ($httpProvider, $ionicConfigProvider, $compileProvider) {
@@ -101,17 +102,17 @@ angular.module('generic-client', ['ionic',
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/home/index.html',
-                        controller: 'HomeCtrl'
+                        controller: 'ListCtrl'
                     }
                 }
             })
 
             // Everything
             .state('app.everything', {
-                url: '/everything',
+                url: '/everything/',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/everything/index.html',
+                        templateUrl: 'templates/everything/create.html',
                         controller: 'EverythingCtrl'
                     },
                     params: {
