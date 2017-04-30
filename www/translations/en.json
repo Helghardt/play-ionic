@@ -10,6 +10,7 @@
   "CONFIRM": "Confirm",
   "SUCCESS": "Success",
   "ERROR": "Error",
+  "AUTHENTICATION_ERROR": "Tehre was an authentication errror.",
   "ACTIVATE": "Activate",
   "ACTIVE": "Active",
   "INSTRUCTIONS": "Instructions",
