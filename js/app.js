@@ -14,7 +14,7 @@ angular.module('generic-client', ['ionic',
     'generic-client.services.accounts',
     'generic-client.services.everything'])
 
-    .constant('API', 'https://130.211.68.207/api/1')
+    .constant('API', 'http://130.211.68.207/api/1')
     //.constant('API', 'http://localhost:2468/api/1')
     .constant('REFRESH_INTERVAL', 3000)
 
