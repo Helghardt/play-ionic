@@ -76,7 +76,7 @@ angular.module('generic-client.controllers.accounts', [])
                         $ionicPopup.alert({title: $translate.instant("ERROR"), template: res.data.message});
                     }
                 }).catch(function (error) {
-                    $ionicPopup.alert({title: $translate.instant("AUTHENTICATION_ERROR"), template: error.data.message});
+                    $ionicPopup.alert({title: $translate.instant("AUTHENTICATION_ERROR"), template: error});
                     $ionicLoading.hide();
                 });
             }
