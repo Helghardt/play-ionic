@@ -535,3 +535,12 @@ input.ng-invalid, input.ng-dirty {
 img-crop {
   position: absolute;
 }
+
+// List stuff
+.line-break {
+  h2, h3, h5 {
+    overflow: inherit;
+    text-overflow: inherit;
+    white-space: normal;
+  }
+}

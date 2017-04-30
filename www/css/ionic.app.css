@@ -10052,3 +10052,8 @@ input.ng-invalid, input.ng-dirty {
 
 img-crop {
   position: absolute; }
+
+.line-break h2, .line-break h3, .line-break h5 {
+  overflow: inherit;
+  text-overflow: inherit;
+  white-space: normal; }
