@@ -8,3 +8,5 @@ plugins/
 # PyCharm Detritus
 
 .idea
+
+build.json
